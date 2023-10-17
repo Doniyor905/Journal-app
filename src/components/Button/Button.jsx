@@ -1,12 +1,8 @@
 import '../Button/Button.css';
 
-const checked = () => {
-	console.log('Privet');
-};
-
-const Button = () => {
+const Button = ({text, onClick}) => {
 	return (
-		<button onClick={checked} className="button accent">Сохранить</button>
+		<button className="button accent" onClick={onClick}>{text}</button>
 	);
 };
 
